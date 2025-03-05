@@ -5,7 +5,6 @@ import {
   FileText, 
   HelpCircle, 
   Home, 
-  Package, 
   Settings, 
   ShoppingCart, 
   Users, 
