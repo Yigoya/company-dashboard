@@ -6,7 +6,7 @@ interface StatCardProps {
   title: string;
   value: string | number;
   description?: string;
-  icon?: LucideIcon;
+  icon?: typeof LucideIcon;
   trend?: number;
   trendLabel?: string;
   className?: string;

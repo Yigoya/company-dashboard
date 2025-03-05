@@ -12,7 +12,7 @@ import { Input } from '@/components/ui/input';
 import { ModeToggle } from '@/components/ui/mode-toggle';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { markNotificationAsRead } from '@/store/slices/uiSlice';
-import { Bell, Menu, Search } from 'lucide-react';
+import { Menu, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { NotificationsPopover } from './NotificationsPopover';
 
@@ -31,7 +31,7 @@ export function Header({ onMenuClick }: HeaderProps) {
     .join('')
     .toUpperCase();
 
-  const unreadCount = notifications.filter(n => !n.read).length;
+  notifications.filter(n => !n.read).length;
 
   const handleNotificationClick = (id: string) => {
     dispatch(markNotificationAsRead(id));

@@ -240,7 +240,7 @@ export function AdvancedRevenueChart({ data }: AdvancedRevenueChartProps) {
                     color: 'hsl(var(--card-foreground))',
                   }}
                   formatter={(value, name) => {
-                    return [`$${value}`, name.charAt(0).toUpperCase() + name.slice(1)];
+                    return [`$${value}`, typeof name === 'string' ? name.charAt(0).toUpperCase() + name.slice(1) : name];
                   }}
                 />
                 <Legend />

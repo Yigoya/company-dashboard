@@ -9,7 +9,6 @@ import {
 import { DataTable } from '@/components/ui/data-table';
 import { useAppSelector } from '@/store/hooks';
 import { ColumnDef } from '@tanstack/react-table';
-import { format } from 'date-fns';
 import { Plus, Star } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Supplier } from '@/types';
